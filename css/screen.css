@@ -173,12 +173,12 @@ td {
 /**
     Clear fix
 */
-.clear:before, .container:before, .clear:after, .container:after {
+.clear:before, .clear:after {
   content: " ";
   display: table;
 }
 
-.clear:after, .container:after {
+.clear:after {
   clear: both;
 }
 
@@ -186,31 +186,9 @@ td {
   transition: all 0.5s ease-in-out;
 }
 
-.container {
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-@media (min-width: 768px) {
-  .container {
-    width: 744px;
-  }
-}
-
-@media (min-width: 992px) {
-  .container {
-    width: 960px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .container {
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
+body {
+  font-family: "Roboto", sans-serif;
+  color: #262626;
 }
 
 .browserupgrade {
@@ -234,18 +212,107 @@ td {
   width: 810px;
 }
 
-header .move {
+.panel {
+  height: 608px;
+  display: none;
+}
+
+.panel.agreement {
+  display: block;
+}
+
+.panel.agreement {
+  background: url("../images/base/background-1.png") no-repeat top right 38px #8dc63f;
+}
+
+.heading-1 {
+  font-weight: 700;
+  line-height: 48px;
+  text-align: center;
+  font-size: 36px;
+}
+
+.paragraph-1 {
+  font-size: 24px;
+  line-height: 35px;
+  font-weight: 500;
+  text-align: center;
+}
+
+header {
+  background-color: #373737;
+  height: 126px;
+  box-shadow: 0 5px 4px rgba(0, 0, 0, 0.23);
+  padding: 0 20px;
+  position: relative;
+}
+
+header div {
   float: left;
+}
+
+header .move {
   width: 79px;
   height: 79px;
   background: url("../images/header/move.png") no-repeat center;
+  margin: 19px 11px 0 0;
 }
 
 header .zwilling {
-  float: left;
   width: 70px;
   height: 94px;
   background: url("../images/header/zwilling.png") no-repeat center;
+  margin-top: 19px;
+}
+
+header .logo {
+  width: 269px;
+  height: 105px;
+  background: url("../images/header/logo.png") no-repeat center;
+  margin: 14px 0 0 102px;
+}
+
+header .spar {
+  width: 168px;
+  height: 96px;
+  background: url("../images/header/spar.png") no-repeat center;
+  float: right;
+  margin-top: 14px;
+}
+
+footer {
+  height: 46px;
+  background-color: #373737;
+}
+
+footer ul {
+  width: 100%;
+  text-align: center;
+}
+
+footer ul li {
+  display: inline-block;
+  text-align: center;
+  line-height: 46px;
+  margin-right: 46px;
+}
+
+footer ul li:last-child {
+  margin-right: 0;
+}
+
+footer ul li a {
+  color: #fff;
+  font-size: 18px;
+  display: inline-block;
+}
+
+.panel.agreement .heading-1 {
+  padding: 42px 70px 44px 70px;
+}
+
+.panel.agreement .paragraph-1 {
+  padding: 0 90px;
 }
 
 /*==========  Mobile First Method  ==========*/

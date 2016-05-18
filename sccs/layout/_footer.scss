@@ -1,0 +1,22 @@
+footer{
+	height: 46px;
+	background-color: #373737;
+	ul{
+		width: 100%;
+		text-align: center;
+		li{
+			display: inline-block;
+			text-align: center;
+			line-height: 46px;
+			margin-right: 46px;
+				&:last-child{
+					margin-right: 0;
+				}	
+			a{
+				color: #fff;
+				font-size: 18px;
+				display: inline-block;							
+			}
+		}
+	}
+}
