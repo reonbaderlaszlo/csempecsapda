@@ -173,22 +173,52 @@ td {
 /**
     Clear fix
 */
-.clear:before, .clear:after {
+.clear:before, .panel.description .locker:before, .clear:after, .panel.description .locker:after {
   content: " ";
   display: table;
 }
 
-.clear:after {
+.clear:after, .panel.description .locker:after {
   clear: both;
 }
 
-.transition-all {
-  transition: all 0.5s ease-in-out;
+.transition-all, .btn-purple {
+  transition: all 0.5s ease;
+}
+
+.btn-purple {
+  width: 237px;
+  height: 72px;
+  border: 0;
+  border-radius: 31px;
+  background-color: #965786;
+  box-shadow: inset 0 -4px rgba(0, 0, 0, 0.5);
+  font-size: 35px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 0 0 rgba(0, 0, 0, 0.75);
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  font-family: "Roboto";
+}
+
+.btn-purple:focus {
+  outline: none;
+}
+
+.btn-purple:hover {
+  background-color: #7c466e;
 }
 
 body {
   font-family: "Roboto", sans-serif;
   color: #262626;
+}
+
+main {
+  background-color: #8dc63f;
 }
 
 .browserupgrade {
@@ -215,13 +245,14 @@ body {
 .panel {
   height: 608px;
   display: none;
+  position: relative;
 }
 
 .panel.agreement {
   display: block;
 }
 
-.panel.agreement {
+.panel.agreement, .panel.description {
   background: url("../images/base/background-1.png") no-repeat top right 38px #8dc63f;
 }
 
@@ -245,6 +276,7 @@ header {
   box-shadow: 0 5px 4px rgba(0, 0, 0, 0.23);
   padding: 0 20px;
   position: relative;
+  z-index: 1;
 }
 
 header div {
@@ -312,7 +344,236 @@ footer ul li a {
 }
 
 .panel.agreement .paragraph-1 {
-  padding: 0 90px;
+  padding: 0 90px 50px 90px;
+}
+
+.panel.agreement .checkbox {
+  text-align: center;
+}
+
+.panel.agreement .checkbox:nth-of-type(2) {
+  margin-top: 22px;
+  position: relative;
+  left: -1px;
+}
+
+.panel.agreement input[type=checkbox].css-checkbox {
+  position: absolute;
+  z-index: -1000;
+  left: -1000px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+.panel.agreement input[type=checkbox].css-checkbox + label.css-label {
+  padding-left: 47px;
+  height: 34px;
+  display: inline-block;
+  line-height: 34px;
+  background-repeat: no-repeat;
+  background-position: 0 -34px;
+  font-size: 22px;
+  font-weight: 500;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.panel.agreement input[type=checkbox].css-checkbox + label.css-label a {
+  text-decoration: underline;
+}
+
+.panel.agreement input[type=checkbox].css-checkbox + label.css-label.wrong {
+  color: #d10109;
+}
+
+.panel.agreement input[type=checkbox].css-checkbox + label.css-label.wrong a {
+  color: #d10109;
+}
+
+.panel.agreement input[type=checkbox].css-checkbox:checked + label.css-label {
+  background-position: 0 0;
+}
+
+.panel.agreement label.css-label {
+  background-image: url("../images/index/checkbox.png");
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.panel.agreement button {
+  margin-top: 42px;
+}
+
+.panel.description .heading-1 {
+  padding-top: 54px;
+}
+
+.panel.description .paragraph-1 {
+  padding: 17px 50px;
+}
+
+.panel.description h2 {
+  font-size: 28px;
+  text-align: center;
+  font-weight: 700;
+  padding-bottom: 48px;
+}
+
+.panel.description .locker {
+  width: 198px;
+  margin: 0 auto 46px auto;
+}
+
+.panel.description .locker span {
+  display: block;
+  font-weight: 500;
+  letter-spacing: 0.080em;
+  font-size: 65px;
+  float: left;
+  line-height: 107px;
+  margin-right: 11px;
+}
+
+.panel.description .locker .padlock {
+  float: left;
+  width: 106px;
+  height: 107px;
+  background: url("../images/index/padlock.png") no-repeat center;
+}
+
+.panel.game {
+  overflow: hidden;
+}
+
+.panel.game .popup {
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  top: 7px;
+  bottom: 7px;
+  margin: 0 auto;
+  border-radius: 10px;
+  background-color: rgba(55, 55, 55, 0.9);
+  z-index: 10;
+}
+
+.panel.game .popup .selected-product {
+  width: 162px;
+  height: 162px;
+  margin: 18px auto 10px auto;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0 -5px rgba(0, 0, 0, 0.21);
+  position: relative;
+}
+
+.panel.game .popup .selected-product img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.panel.game .popup .number {
+  font-weight: 900;
+  font-size: 60px;
+  color: #8dc63f;
+  text-align: center;
+}
+
+.panel.game .popup p {
+  font-size: 35px;
+  line-height: 49px;
+  color: #fff;
+  text-align: center;
+  font-weight: 500;
+  padding: 0 67px;
+}
+
+.panel.game .game-box {
+  height: 450px;
+  width: 1753px;
+  background: url("../images/index/game-background.jpg") no-repeat center bottom;
+  position: relative;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.panel.game .game-box .navigations {
+  position: absolute;
+  width: 810px;
+  height: inherit;
+}
+
+.panel.game .game-box .navigations a {
+  display: block;
+  position: absolute;
+  width: 69px;
+  height: 69px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.panel.game .game-box .navigations a.left {
+  background: url("../images/index/left.png") no-repeat center;
+  left: 20px;
+}
+
+.panel.game .game-box .navigations a.right {
+  background: url("../images/index/right.png") no-repeat center;
+  right: 20px;
+}
+
+.panel.game .lockers {
+  padding-top: 24px;
+}
+
+.panel.game .lockers .row {
+  text-align: center;
+  font-size: 0;
+}
+
+.panel.game .lockers .one {
+  margin-right: 61px;
+}
+
+.panel.game .lockers .three {
+  margin-top: 20px;
+}
+
+.panel.game .lockers .lock {
+  width: 45px;
+  height: 46px;
+  display: inline-block;
+  background: #425034 url("../images/index/spritesheet.png") no-repeat;
+  background-position: 3.5px 0;
+  border-radius: 5px;
+  margin-right: 6.5px;
+}
+
+.panel.game .lockers .lock:last-child {
+  margin-right: 0;
+}
+
+.panel.game .lockers .lock.active {
+  background-position: -36px -2px;
+}
+
+.panel.game .lockers .line {
+  display: inline-block;
 }
 
 /*==========  Mobile First Method  ==========*/

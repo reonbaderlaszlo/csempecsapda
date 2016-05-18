@@ -1,40 +1,107 @@
 <?php echo $header; ?>
 <!-- Main Content -->
 <main>
-	<!-- Description -->
-	<div class="panel description">
+<!-- Agreement -->
+<div class="panel agreement">
+	<h1 class="heading-1">Szabadulj ki a fürdőszobából és nyerd meg az értékes Möve&Zwilling nyeremények egyikét!</h1>
+	<p class="paragraph-1">Ha eddig még nem tetted, lájkold az oldalunkat ajánlatainkért és nyereményjátékainkért!</p>
+	<div class="checkbox">
+		<input type="checkbox" id="checkboxG1" class="css-checkbox"><label for="checkboxG1" class="css-label">Feliratkozom a SPAR Hírlevélre.</label>
 	</div>
-	<!-- Agreement -->
-	<div class="panel agreement">
-		<h1 class="heading-1">Szabadulj ki a fürdőszobából és nyerd meg az értékes Möve&Zwilling nyeremények egyikét!</h1>
-		<p class="paragraph-1">Ha eddig még nem tetted, lájkold az oldalunkat ajánlatainkért és nyereményjátékainkért!</p>
+	<div class="checkbox">
+		<input type="checkbox" id="checkboxG2" class="css-checkbox"><label for="checkboxG2" class="css-label wrong">Elfogadom a <a target="_blank" href="#">játékszabályzatot.</a></label>
 	</div>
-	<!-- Vote -->
-	<div class="panel vote">
+	<button class="btn-purple">Tovább</button>
+</div>
+<!-- Description -->
+<div class="panel description">
+	<h1 class="heading-1">Fejtsd meg legalább 7 feladványunkat és szabadulj ki a fürdőszobából!</h1>
+	<p class="paragraph-1">Minél több feladányt fejtesz meg, annál nagyobb az esélyed az értékes Möve & Zwilling nyeremények megnyerésére.</p>
+	<h2>Minden nap új rejtvény!</h2>
+	<div class="locker">
+		<span>7x</span>
+		<div class="padlock"></div>
 	</div>
-	<!-- Thanks for vote -->
-	<div class="panel thanks">
+	<button class="btn-purple">Játszom</button>
+</div>
+<!-- Game -->
+<div class="panel game">
+<div class="popup">
+	<div class="selected-product">
+		<img src="/<?php echo $this->config->rootDir; ?>/upload/images/game/1.png" alt="Mosdó Kagyló">
 	</div>
-	<!-- Already voted -->
-	<div class="panel voted">
+	<h1 class="number">1.</h1>
+	<p>Tippeld meg mekkora az egy főre jutó vízfogyasztás!</p>
+	<div class="answers">
+		<button class="btn-green answer-1">5-6 köbméter</button>
+		<button class="btn-red answer-2">2-3 köbméter</button>
+		<button class="btn-purple answer-3">7-8 köbméter</button>
 	</div>
-	<!-- Game Description -->
-	<div class="panel game-description">
+</div>
+	<div class="game-box">
+		<div class="navigations">
+			<a href="#" class="left"></a>
+			<a href="" class="right"></a>
+		</div>
 	</div>
-	<!-- Game -->
-	<div class="panel game">
+	<div class="lockers">
+		<div class="row">
+			<div class="line one">
+				<?php
+					for ($i=0; $i < 7 ; $i++) { 
+						?>
+						<div class="lock"></div>
+						<?php
+					}
+				 ?>
+			</div>
+			<div class="line two">
+				<?php
+					for ($i=0; $i < 7 ; $i++) { 
+						?>
+						<div class="lock active"></div>
+						<?php
+					}
+				 ?>
+			</div>
+		</div>
+		<div class="row">
+			<div class="line three">
+				<?php
+					for ($i=0; $i < 7 ; $i++) { 
+						?>
+						<div class="lock"></div>
+						<?php
+					}
+				 ?>
+			</div>
+		</div>
 	</div>
-	<!-- Success -->
-	<div class="panel success">
-	</div>
-	<!-- Fail -->
-	<div class="panel fail">
-	</div>
-	<!-- Game Over -->
-	<div class="panel game-over">
-	</div>
-	<!-- Winners -->
-	<div class="panel winners">
-	</div>
+</div>
+<!-- Vote -->
+<div class="panel vote">
+</div>
+<!-- Thanks for vote -->
+<div class="panel thanks">
+</div>
+<!-- Already voted -->
+<div class="panel voted">
+</div>
+<!-- Game Description -->
+<div class="panel game-description">
+</div>
+
+<!-- Success -->
+<div class="panel success">
+</div>
+<!-- Fail -->
+<div class="panel fail">
+</div>
+<!-- Game Over -->
+<div class="panel game-over">
+</div>
+<!-- Winners -->
+<div class="panel winners">
+</div>
 </main>
 <?php echo $footer; ?>
