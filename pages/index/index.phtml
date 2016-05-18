@@ -26,18 +26,18 @@
 </div>
 <!-- Game -->
 <div class="panel game">
-<div class="popup">
-	<div class="selected-product">
-		<img src="/<?php echo $this->config->rootDir; ?>/upload/images/game/1.png" alt="Mosdó Kagyló">
+	<div class="popup">
+		<div class="selected-product">
+			<img src="/<?php echo $this->config->rootDir; ?>/upload/images/game/1.png" alt="Mosdó Kagyló">
+		</div>
+		<h1 class="number">1.</h1>
+		<p>Tippeld meg mekkora az egy főre jutó vízfogyasztás!</p>
+		<div class="answers">
+			<button class="btn-green answer-1">5-6 köbméter</button>
+			<button class="btn-red answer-2">2-3 köbméter</button>
+			<button class="btn-purple-2 answer-3">7-8 köbméter</button>
+		</div>
 	</div>
-	<h1 class="number">1.</h1>
-	<p>Tippeld meg mekkora az egy főre jutó vízfogyasztás!</p>
-	<div class="answers">
-		<button class="btn-green answer-1">5-6 köbméter</button>
-		<button class="btn-red answer-2">2-3 köbméter</button>
-		<button class="btn-purple answer-3">7-8 köbméter</button>
-	</div>
-</div>
 	<div class="game-box">
 		<div class="navigations">
 			<a href="#" class="left"></a>
@@ -48,49 +48,36 @@
 		<div class="row">
 			<div class="line one">
 				<?php
-					for ($i=0; $i < 7 ; $i++) { 
-						?>
-						<div class="lock"></div>
-						<?php
-					}
-				 ?>
+					for ($i=0; $i < 7 ; $i++) {
+				?>
+				<div class="lock"></div>
+				<?php
+				}
+				?>
 			</div>
 			<div class="line two">
 				<?php
-					for ($i=0; $i < 7 ; $i++) { 
-						?>
-						<div class="lock active"></div>
-						<?php
-					}
-				 ?>
+					for ($i=0; $i < 7 ; $i++) {
+				?>
+				<div class="lock active"></div>
+				<?php
+				}
+				?>
 			</div>
 		</div>
 		<div class="row">
 			<div class="line three">
 				<?php
-					for ($i=0; $i < 7 ; $i++) { 
-						?>
-						<div class="lock"></div>
-						<?php
-					}
-				 ?>
+					for ($i=0; $i < 7 ; $i++) {
+				?>
+				<div class="lock"></div>
+				<?php
+				}
+				?>
 			</div>
 		</div>
 	</div>
 </div>
-<!-- Vote -->
-<div class="panel vote">
-</div>
-<!-- Thanks for vote -->
-<div class="panel thanks">
-</div>
-<!-- Already voted -->
-<div class="panel voted">
-</div>
-<!-- Game Description -->
-<div class="panel game-description">
-</div>
-
 <!-- Success -->
 <div class="panel success">
 </div>
@@ -99,9 +86,23 @@
 </div>
 <!-- Game Over -->
 <div class="panel game-over">
+	<h1 class="heading-1">Játék véget ért, köszönjük, hogy velünk játszottál!</h1>
+	<p class="paragraph-1">A sorsolás eredményét 2016. június 15-én este 6 óráig tesszük közzé.</p>
+	<p class="paragraph-1">A nyerteseket e-mailben fogjuk értesíteni a további teendőikről.</p>
 </div>
 <!-- Winners -->
 <div class="panel winners">
+	<div class="top">
+		<h1 class="heading-1">Köszönjük, hogy velünk játszottál!</h1>
+		<p class="paragraph-1">Gratulálunk a nyerteseknek:<br>A játék lezárást követő 10 napon belül e-mailben értesítjük nyerteseinket a további teendőkről. </p>
+	</div>
+	<div class="bottom">
+		<div class="tabs">
+		<button class="prize btn-purple">Nyeremény 1</button>
+		<button class="prize btn-purple">Nyeremény 2</button>
+		<button class="prize btn-purple">Nyeremény 3</button>
+	</div>
+	</div>
 </div>
 </main>
 <?php echo $footer; ?>

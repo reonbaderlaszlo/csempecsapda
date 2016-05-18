@@ -248,11 +248,11 @@ main {
   position: relative;
 }
 
-.panel.agreement {
+.panel.winners {
   display: block;
 }
 
-.panel.agreement, .panel.description {
+.panel.agreement, .panel.description, .panel.game-over {
   background: url("../images/base/background-1.png") no-repeat top right 38px #8dc63f;
 }
 
@@ -489,6 +489,7 @@ footer ul li a {
   font-size: 60px;
   color: #8dc63f;
   text-align: center;
+  margin: 20px 0 5px 0;
 }
 
 .panel.game .popup p {
@@ -498,6 +499,48 @@ footer ul li a {
   text-align: center;
   font-weight: 500;
   padding: 0 67px;
+}
+
+.panel.game .popup .answers {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.panel.game .popup .answers button {
+  display: inline-block;
+  width: 204px;
+  height: 62px;
+  margin-right: 48px;
+  border-radius: 10px;
+  border: 0;
+  line-height: 62px;
+  font-size: 24px;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.panel.game .popup .answers button:focus {
+  outline: none;
+}
+
+.panel.game .popup .answers button:last-child {
+  margin-right: 0;
+}
+
+.panel.game .popup .answers button.answer-1 {
+  background-color: #8dc63f;
+  box-shadow: inset 0 -5px rgba(0, 0, 0, 0.3);
+}
+
+.panel.game .popup .answers button.answer-2 {
+  background-color: #f53a41;
+  box-shadow: inset 0 -5px rgba(0, 0, 0, 0.3);
+}
+
+.panel.game .popup .answers button.answer-3 {
+  background-color: #995387;
+  box-shadow: inset 0 -5px rgba(0, 0, 0, 0.3);
 }
 
 .panel.game .game-box {
@@ -574,6 +617,39 @@ footer ul li a {
 
 .panel.game .lockers .line {
   display: inline-block;
+}
+
+.panel.game-over .heading-1 {
+  padding: 108px 90px 40px 90px;
+}
+
+.panel.game-over .paragraph-1:nth-of-type(1) {
+  padding: 0 95px;
+}
+
+.panel.game-over .paragraph-1:nth-of-type(2) {
+  padding: 40px 90px;
+}
+
+.panel.winners .top {
+  height: 232px;
+}
+
+.panel.winners .bottom {
+  height: 376px;
+  background-color: #83ba39;
+}
+
+.panel.winners .bottom button {
+  font-size: 27px;
+}
+
+.panel.winners .heading-1 {
+  padding: 30px 0 20px 0;
+}
+
+.panel.winners .paragraph-1 {
+  padding: 0 50px;
 }
 
 /*==========  Mobile First Method  ==========*/

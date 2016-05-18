@@ -34,11 +34,11 @@ main {
     position: relative;
 }
 
-.panel.agreement {
+.panel.winners {
     display: block;
 }
 
-.panel.agreement, .panel.description {
+.panel.agreement, .panel.description, .panel.game-over {
     background: url("../images/base/background-1.png") no-repeat top right 38px #8dc63f;
 }
 
