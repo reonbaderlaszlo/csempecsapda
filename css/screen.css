@@ -1,0 +1,256 @@
+/**
+    Prevent adjustments of font size after orientation changes in IE and iOS.
+ */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  font-family: sans-serif;
+}
+
+/**
+    Remove the margin in all browsers
+ */
+body {
+  margin: 0;
+}
+
+/**
+    Fix box-sizing
+ */
+* {
+  box-sizing: border-box;
+}
+
+*:after, *:before {
+  box-sizing: border-box;
+}
+
+/**
+    Add the correct display in IE 9-.
+ */
+article, figcaption, figure, footer, header, aside, main, nav, section {
+  display: block;
+}
+
+/**
+    Remove the gray background on active links in IE 10.
+    Remove gaps in links underline in iOS 8+ and Safari 8+.
+
+ */
+a {
+  text-decoration: none;
+  -webkit-text-decoration-skip: objects;
+  background-color: transparent;
+}
+
+/**
+    Remove the outline on focused links when they are also active or hovered in all browsers
+ */
+a:active, a:hover {
+  outline-width: 0;
+}
+
+/**
+    Remove the border on images inside links in IE 10-. + Responsive + Invisible margin-bottom fix
+*/
+img {
+  border-style: none;
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
+}
+
+/**
+    Remove margin, padding, set font-weight to normal
+*/
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+/**
+    Remove margin, padding, set font-weight to normal
+*/
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+/**
+    Remove IOS box-shadow and border-radius
+*/
+input {
+  box-shadow: none;
+  border-radius: 0;
+}
+
+/**
+    Remove the margin in Firefox and Safari.
+*/
+button, input, select, textarea {
+  margin: 0;
+}
+
+/**
+    Show the overflow in Edge.
+*/
+button, input {
+  overflow: visible;
+}
+
+/**
+    Correct the inability to style clickable types in iOS and Safari.
+*/
+button, [type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+    Remove the inner border and padding in Firefox.
+*/
+button::-moz-focus-inner, [type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+    Correct the inability to style clickable types in iOS and Safari.
+    Change font properties to `inherit` in Safari.
+*/
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+/**
+    Add the correct box sizing in IE 10-.
+    Remove the padding in IE 10-.
+*/
+[type="checkbox"], [type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+/**
+    Correct the text style of placeholders in Chrome, Edge, and Safari.
+*/
+::-webkit-input-placeholder {
+  color: inherit;
+  opacity: 0.54;
+}
+
+/**
+    Remove the default vertical scrollbar in IE.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+    Remove the inheritance of text transform in Edge, Firefox, and IE.
+*/
+button, select {
+  text-transform: none;
+}
+
+/**
+    Responsive table
+*/
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/**
+    Responsive table td padding fix
+*/
+td {
+  padding: 0;
+}
+
+/**
+    Clear fix
+*/
+.clear:before, .container:before, .clear:after, .container:after {
+  content: " ";
+  display: table;
+}
+
+.clear:after, .container:after {
+  clear: both;
+}
+
+.transition-all {
+  transition: all 0.5s ease-in-out;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 744px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.browserupgrade {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  background: #fff;
+  z-index: 9999;
+  padding: 10px;
+}
+
+.browserupgrade a {
+  text-decoration: underline;
+  color: lightblue;
+}
+
+#csempe-csapda {
+  width: 810px;
+}
+
+header .move {
+  float: left;
+  width: 79px;
+  height: 79px;
+  background: url("../images/header/move.png") no-repeat center;
+}
+
+header .zwilling {
+  float: left;
+  width: 70px;
+  height: 94px;
+  background: url("../images/header/zwilling.png") no-repeat center;
+}
+
+/*==========  Mobile First Method  ==========*/
+/* Custom, iPhone Retina */
+/* Extra Small Devices, Phones */
+/* Small Devices, Tablets */
+/* Medium Devices, Desktops */
+/* Large Devices, Wide Screens */
