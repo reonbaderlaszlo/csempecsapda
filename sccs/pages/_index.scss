@@ -116,9 +116,10 @@
 }
 
 .panel.game {
-    overflow: hidden;
+    //   overflow: hidden;
 
     .popup {
+        display: none;
         position: absolute;
         left: 20px;
         right: 20px;
@@ -215,31 +216,103 @@
         right: 0;
         margin: 0 auto;
 
-        .navigations {
+        div {
             position: absolute;
-            width: 810px;
-            height: inherit;
+            cursor: pointer;
+        }
 
-            a {
-                display: block;
-                position: absolute;
-                width: 69px;
-                height: 69px;
-                top: 50%;
-                transform: translateY(-50%);
+        .torulkozo {
+            width: 105px;
+            height: 151px;
+            left: 889px;
+            top: 218px;
+        }
 
-                &.left {
-                    background: url("../images/index/left.png") no-repeat center;
-                    left: 20px;
-                }
+        .mosdokagylo {
+            width: 193px;
+            height: 72px;
+            top: 184px;
+            left: 657px;
+        }
 
-                &.right {
-                    background: url("../images/index/right.png") no-repeat center;
-                    right: 20px;
-                }
-            }
+        .fogkrem {
+            width: 30px;
+            height: 60px;
+            top: 132px;
+            left: 695px;
+            z-index: 1;
+        }
+
+        .kontos {
+            width: 139px;
+            height: 209px;
+            top: 65px;
+            left: 290px;
+        }
+
+        .kad {
+            width: 410px;
+            height: 155px;
+            top: 245px;
+            right: 80px;
+        }
+
+        .fogkefe {
+            width: 30px;
+            height: 79px;
+            left: 781px;
+            top: 114px;
+            z-index: 1;
+        }
+
+        .wc {
+            width: 227px;
+            left: 23px;
+            height: 257px;
+            bottom: 15px;
+        }
+
+        .zuhanyrozsa {
+            width: 40px;
+            height: 40px;
+            right: 148px;
+            top: 80px;
+        }
+
+        .gumikacsa {
+            width: 37px;
+            right: 167px;
+            height: 37px;
+            bottom: 192px;
+            z-index: 1;
         }
     }
+
+  /*  .navigations {
+        position: absolute;
+        width: 810px;
+        height: 450px;
+        top: 0;
+
+        a {
+            display: block;
+            position: absolute;
+            width: 69px;
+            height: 69px;
+            top: 50%;
+            transform: translateY(-50%);
+
+            &.left {
+                background: url("../images/index/left.png") no-repeat center;
+                left: 20px;
+            }
+
+            &.right {
+                background: url("../images/index/right.png") no-repeat center;
+                right: 20px;
+            }
+        }
+    }*/
 
     .lockers {
         padding-top: 24px;
@@ -366,7 +439,7 @@
     }
 }
 
-.panel.fail, .panel.fail-2 {
+.panel.fail, .panel.fail-2, .panel.fail-last-week {
     .heading-1 {
         padding-top: 100px;
     }
@@ -390,7 +463,7 @@
     }
 }
 
-.panel.success, .panel.success-draw {
+.panel.success, .panel.success-draw, .panel.success-last-week {
     .heading-1 {
         padding: 40px 0;
     }
@@ -443,5 +516,17 @@
         font-size: 29px;
         float: left;
         margin-left: 28px;
+    }
+}
+
+.panel.success-last-week {
+    .share {
+        margin-top: 35px;
+    }
+}
+
+.panel.fail-last-week {
+    .paragraph-1 {
+        padding-bottom: 109px;
     }
 }

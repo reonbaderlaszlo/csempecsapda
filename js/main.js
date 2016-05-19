@@ -34,4 +34,8 @@ $(function(){
 
     });
 
+ /*   var setWidth = $('.panel.game .game-box').width() / 4;
+
+    $('.panel.game .game-box').css('left', - setWidth);*/
+
 });

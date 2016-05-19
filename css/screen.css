@@ -248,15 +248,15 @@ main {
   position: relative;
 }
 
-.panel.fail-draw {
+.panel.game {
   display: block;
 }
 
-.panel.agreement, .panel.description, .panel.game-over, .panel.fail, .panel.fail-2, .panel.fail-draw {
+.panel.agreement, .panel.description, .panel.game-over, .panel.fail, .panel.fail-2, .panel.fail-draw, .panel.fail-last-week {
   background: url("../images/base/background-1.png") no-repeat top right 38px #8dc63f;
 }
 
-.panel.success, .panel.success-draw {
+.panel.success, .panel.success-draw, .panel.success-last-week {
   background: url("../images/base/background-2.png") no-repeat center left 53px #8dc63f;
 }
 
@@ -454,10 +454,35 @@ footer ul li a {
 }
 
 .panel.game {
-  overflow: hidden;
+  /*  .navigations {
+        position: absolute;
+        width: 810px;
+        height: 450px;
+        top: 0;
+
+        a {
+            display: block;
+            position: absolute;
+            width: 69px;
+            height: 69px;
+            top: 50%;
+            transform: translateY(-50%);
+
+            &.left {
+                background: url("../images/index/left.png") no-repeat center;
+                left: 20px;
+            }
+
+            &.right {
+                background: url("../images/index/right.png") no-repeat center;
+                right: 20px;
+            }
+        }
+    }*/
 }
 
 .panel.game .popup {
+  display: none;
   position: absolute;
   left: 20px;
   right: 20px;
@@ -557,31 +582,75 @@ footer ul li a {
   margin: 0 auto;
 }
 
-.panel.game .game-box .navigations {
+.panel.game .game-box div {
   position: absolute;
-  width: 810px;
-  height: inherit;
+  cursor: pointer;
 }
 
-.panel.game .game-box .navigations a {
-  display: block;
-  position: absolute;
-  width: 69px;
-  height: 69px;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
+.panel.game .game-box .torulkozo {
+  width: 105px;
+  height: 151px;
+  left: 889px;
+  top: 218px;
 }
 
-.panel.game .game-box .navigations a.left {
-  background: url("../images/index/left.png") no-repeat center;
-  left: 20px;
+.panel.game .game-box .mosdokagylo {
+  width: 193px;
+  height: 72px;
+  top: 184px;
+  left: 657px;
 }
 
-.panel.game .game-box .navigations a.right {
-  background: url("../images/index/right.png") no-repeat center;
-  right: 20px;
+.panel.game .game-box .fogkrem {
+  width: 30px;
+  height: 60px;
+  top: 132px;
+  left: 695px;
+  z-index: 1;
+}
+
+.panel.game .game-box .kontos {
+  width: 139px;
+  height: 209px;
+  top: 65px;
+  left: 290px;
+}
+
+.panel.game .game-box .kad {
+  width: 410px;
+  height: 155px;
+  top: 245px;
+  right: 80px;
+}
+
+.panel.game .game-box .fogkefe {
+  width: 30px;
+  height: 79px;
+  left: 781px;
+  top: 114px;
+  z-index: 1;
+}
+
+.panel.game .game-box .wc {
+  width: 227px;
+  left: 23px;
+  height: 257px;
+  bottom: 15px;
+}
+
+.panel.game .game-box .zuhanyrozsa {
+  width: 40px;
+  height: 40px;
+  right: 148px;
+  top: 80px;
+}
+
+.panel.game .game-box .gumikacsa {
+  width: 37px;
+  right: 167px;
+  height: 37px;
+  bottom: 192px;
+  z-index: 1;
 }
 
 .panel.game .lockers {
@@ -700,15 +769,15 @@ footer ul li a {
   padding: 0 50px;
 }
 
-.panel.fail .heading-1, .panel.fail-2 .heading-1 {
+.panel.fail .heading-1, .panel.fail-2 .heading-1, .panel.fail-last-week .heading-1 {
   padding-top: 100px;
 }
 
-.panel.fail .paragraph-1, .panel.fail-2 .paragraph-1 {
+.panel.fail .paragraph-1, .panel.fail-2 .paragraph-1, .panel.fail-last-week .paragraph-1 {
   padding: 33px 60px 147px 60px;
 }
 
-.panel.fail .give-chance, .panel.fail-2 .give-chance {
+.panel.fail .give-chance, .panel.fail-2 .give-chance, .panel.fail-last-week .give-chance {
   float: left;
   font-size: 24px;
   line-height: 32px;
@@ -716,21 +785,21 @@ footer ul li a {
   width: 60%;
 }
 
-.panel.fail button, .panel.fail-2 button {
+.panel.fail button, .panel.fail-2 button, .panel.fail-last-week button {
   font-size: 29px;
   float: left;
   margin-left: 28px;
 }
 
-.panel.success .heading-1, .panel.success-draw .heading-1 {
+.panel.success .heading-1, .panel.success-draw .heading-1, .panel.success-last-week .heading-1 {
   padding: 40px 0;
 }
 
-.panel.success .paragraph-1, .panel.success-draw .paragraph-1 {
+.panel.success .paragraph-1, .panel.success-draw .paragraph-1, .panel.success-last-week .paragraph-1 {
   padding: 0 40px;
 }
 
-.panel.success .give p, .panel.success .share p, .panel.success-draw .give p, .panel.success-draw .share p {
+.panel.success .give p, .panel.success .share p, .panel.success-draw .give p, .panel.success-draw .share p, .panel.success-last-week .give p, .panel.success-last-week .share p {
   float: left;
   width: 61%;
   padding-left: 65px;
@@ -738,11 +807,11 @@ footer ul li a {
   line-height: 32px;
 }
 
-.panel.success .give button, .panel.success .share button, .panel.success-draw .give button, .panel.success-draw .share button {
+.panel.success .give button, .panel.success .share button, .panel.success-draw .give button, .panel.success-draw .share button, .panel.success-last-week .give button, .panel.success-last-week .share button {
   font-size: 29px;
 }
 
-.panel.success .share, .panel.success-draw .share {
+.panel.success .share, .panel.success-draw .share, .panel.success-last-week .share {
   margin: 74px 0 67px 0;
 }
 
@@ -770,6 +839,14 @@ footer ul li a {
   font-size: 29px;
   float: left;
   margin-left: 28px;
+}
+
+.panel.success-last-week .share {
+  margin-top: 35px;
+}
+
+.panel.fail-last-week .paragraph-1 {
+  padding-bottom: 109px;
 }
 
 /*==========  Mobile First Method  ==========*/

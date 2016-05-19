@@ -34,15 +34,15 @@ main {
     position: relative;
 }
 
-.panel.fail-draw {
+.panel.game {
     display: block;
 }
 
-.panel.agreement, .panel.description, .panel.game-over, .panel.fail, .panel.fail-2, .panel.fail-draw {
+.panel.agreement, .panel.description, .panel.game-over, .panel.fail, .panel.fail-2, .panel.fail-draw, .panel.fail-last-week {
     background: url("../images/base/background-1.png") no-repeat top right 38px #8dc63f;
 }
 
-.panel.success, .panel.success-draw{
+.panel.success, .panel.success-draw, .panel.success-last-week{
     background: url("../images/base/background-2.png") no-repeat center left 53px #8dc63f;
 }
 
