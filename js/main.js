@@ -20,4 +20,18 @@ $(function(){
 
     });
 
+    $('.panel.winners .tabs button').on('click', function(){
+
+    	$('.panel.winners .tabs button').removeClass('active');
+
+    	$(this).addClass('active');
+
+    	var id = $(this).attr('class').split(' ')[0];
+
+    	$('.names div').hide();
+
+    	$('.names .' + id).fadeIn('fast');
+
+    });
+
 });

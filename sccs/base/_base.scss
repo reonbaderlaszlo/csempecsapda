@@ -34,12 +34,16 @@ main {
     position: relative;
 }
 
-.panel.winners {
+.panel.success {
     display: block;
 }
 
-.panel.agreement, .panel.description, .panel.game-over {
+.panel.agreement, .panel.description, .panel.game-over, .panel.fail {
     background: url("../images/base/background-1.png") no-repeat top right 38px #8dc63f;
+}
+
+.panel.success{
+    background: url("../images/base/background-2.png") no-repeat center left 53px #8dc63f;
 }
 
 .heading-1 {

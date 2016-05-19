@@ -296,21 +296,100 @@
         }
     }
 }
-.panel.winners{
-	.top{
-		height: 232px;
-	}
-	.bottom{
-		height: 376px;
-		background-color: #83ba39;
-		button{
-			font-size: 27px;
-		}
-	}
-	.heading-1{
-		padding: 30px 0 20px 0;
-	}
-	.paragraph-1{
-		padding: 0 50px;
-	}
+
+.panel.winners {
+    .top {
+        height: 232px;
+    }
+
+    .bottom {
+        height: 376px;
+        background-color: #83ba39;
+        padding: 0 20px;
+
+        button {
+            font-size: 27px;
+            opacity: 0.60;
+
+            &.active {
+                opacity: 1;
+            }
+        }
+
+        .names {
+            @extend .clear;
+            height: 210px;
+            overflow: auto;
+            div {
+                display: none;
+
+                &:first-child {
+                    display: block;
+                }
+            }
+
+            ul {
+                width: 50%;
+                float: left;
+                text-align: center;
+
+                li {
+                    font-size: 20px;
+                    line-height: 35px;
+                }
+            }
+        }
+    }
+
+    .tabs {
+        text-align: center;
+        padding: 23px 0 35px 0;
+
+        button {
+            display: inline-block;
+            margin-right: 18px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+
+    .heading-1 {
+        padding: 30px 0 20px 0;
+    }
+
+    .paragraph-1 {
+        padding: 0 50px;
+    }
+}
+
+.panel.fail{
+    .heading-1{
+        padding-top: 100px;
+    }
+    .paragraph-1{
+            padding: 33px 60px 147px 60px;
+    }
+    .give-chance{
+        float: left;
+        font-size: 24px;
+        line-height: 32px;
+        padding-left: 65px;
+        width: 60%;
+    }
+    button{
+        font-size: 29px;
+        float: left;
+        margin-left: 28px;
+    }
+}
+
+.panel.success{
+    .heading-1{
+        padding: 40px 0;
+    }
+    .paragraph-1{
+        padding: 0 40px;
+    }
 }

@@ -173,12 +173,12 @@ td {
 /**
     Clear fix
 */
-.clear:before, .panel.description .locker:before, .clear:after, .panel.description .locker:after {
+.clear:before, .panel.description .locker:before, .panel.winners .bottom .names:before, .clear:after, .panel.description .locker:after, .panel.winners .bottom .names:after {
   content: " ";
   display: table;
 }
 
-.clear:after, .panel.description .locker:after {
+.clear:after, .panel.description .locker:after, .panel.winners .bottom .names:after {
   clear: both;
 }
 
@@ -248,12 +248,16 @@ main {
   position: relative;
 }
 
-.panel.winners {
+.panel.success {
   display: block;
 }
 
-.panel.agreement, .panel.description, .panel.game-over {
+.panel.agreement, .panel.description, .panel.game-over, .panel.fail {
   background: url("../images/base/background-1.png") no-repeat top right 38px #8dc63f;
+}
+
+.panel.success {
+  background: url("../images/base/background-2.png") no-repeat center left 53px #8dc63f;
 }
 
 .heading-1 {
@@ -638,10 +642,54 @@ footer ul li a {
 .panel.winners .bottom {
   height: 376px;
   background-color: #83ba39;
+  padding: 0 20px;
 }
 
 .panel.winners .bottom button {
   font-size: 27px;
+  opacity: 0.60;
+}
+
+.panel.winners .bottom button.active {
+  opacity: 1;
+}
+
+.panel.winners .bottom .names {
+  height: 210px;
+  overflow: auto;
+}
+
+.panel.winners .bottom .names div {
+  display: none;
+}
+
+.panel.winners .bottom .names div:first-child {
+  display: block;
+}
+
+.panel.winners .bottom .names ul {
+  width: 50%;
+  float: left;
+  text-align: center;
+}
+
+.panel.winners .bottom .names ul li {
+  font-size: 20px;
+  line-height: 35px;
+}
+
+.panel.winners .tabs {
+  text-align: center;
+  padding: 23px 0 35px 0;
+}
+
+.panel.winners .tabs button {
+  display: inline-block;
+  margin-right: 18px;
+}
+
+.panel.winners .tabs button:last-child {
+  margin-right: 0;
 }
 
 .panel.winners .heading-1 {
@@ -650,6 +698,36 @@ footer ul li a {
 
 .panel.winners .paragraph-1 {
   padding: 0 50px;
+}
+
+.panel.fail .heading-1 {
+  padding-top: 100px;
+}
+
+.panel.fail .paragraph-1 {
+  padding: 33px 60px 147px 60px;
+}
+
+.panel.fail .give-chance {
+  float: left;
+  font-size: 24px;
+  line-height: 32px;
+  padding-left: 65px;
+  width: 60%;
+}
+
+.panel.fail button {
+  font-size: 29px;
+  float: left;
+  margin-left: 28px;
+}
+
+.panel.success .heading-1 {
+  padding: 40px 0;
+}
+
+.panel.success .paragraph-1 {
+  padding: 0 40px;
 }
 
 /*==========  Mobile First Method  ==========*/
