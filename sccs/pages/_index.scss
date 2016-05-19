@@ -318,8 +318,10 @@
 
         .names {
             @extend .clear;
+
             height: 210px;
             overflow: auto;
+
             div {
                 display: none;
 
@@ -364,32 +366,82 @@
     }
 }
 
-.panel.fail{
-    .heading-1{
+.panel.fail, .panel.fail-2 {
+    .heading-1 {
         padding-top: 100px;
     }
-    .paragraph-1{
-            padding: 33px 60px 147px 60px;
+
+    .paragraph-1 {
+        padding: 33px 60px 147px 60px;
     }
-    .give-chance{
+
+    .give-chance {
         float: left;
         font-size: 24px;
         line-height: 32px;
         padding-left: 65px;
         width: 60%;
     }
-    button{
+
+    button {
         font-size: 29px;
         float: left;
         margin-left: 28px;
     }
 }
 
-.panel.success{
-    .heading-1{
+.panel.success, .panel.success-draw {
+    .heading-1 {
         padding: 40px 0;
     }
-    .paragraph-1{
+
+    .paragraph-1 {
         padding: 0 40px;
+    }
+
+    .give, .share {
+        p {
+            float: left;
+            width: 61%;
+            padding-left: 65px;
+            font-size: 24px;
+            line-height: 32px;
+        }
+
+        button {
+            font-size: 29px;
+        }
+    }
+
+    .share {
+        margin: 74px 0 67px 0;
+    }
+}
+
+.fail-draw {
+    .heading-1 {
+        padding: 55px 0 35px 0;
+    }
+
+    .paragraph-1 {
+        padding: 0 65px;
+
+        &:nth-of-type(2) {
+            margin: 48px 0 126px 0;
+        }
+    }
+
+    .give-chance {
+        float: left;
+        font-size: 24px;
+        line-height: 32px;
+        padding-left: 65px;
+        width: 60%;
+    }
+
+    button {
+        font-size: 29px;
+        float: left;
+        margin-left: 28px;
     }
 }

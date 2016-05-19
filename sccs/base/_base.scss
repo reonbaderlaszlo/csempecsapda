@@ -34,15 +34,15 @@ main {
     position: relative;
 }
 
-.panel.success {
+.panel.fail-draw {
     display: block;
 }
 
-.panel.agreement, .panel.description, .panel.game-over, .panel.fail {
+.panel.agreement, .panel.description, .panel.game-over, .panel.fail, .panel.fail-2, .panel.fail-draw {
     background: url("../images/base/background-1.png") no-repeat top right 38px #8dc63f;
 }
 
-.panel.success{
+.panel.success, .panel.success-draw{
     background: url("../images/base/background-2.png") no-repeat center left 53px #8dc63f;
 }
 

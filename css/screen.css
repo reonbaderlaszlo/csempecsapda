@@ -248,15 +248,15 @@ main {
   position: relative;
 }
 
-.panel.success {
+.panel.fail-draw {
   display: block;
 }
 
-.panel.agreement, .panel.description, .panel.game-over, .panel.fail {
+.panel.agreement, .panel.description, .panel.game-over, .panel.fail, .panel.fail-2, .panel.fail-draw {
   background: url("../images/base/background-1.png") no-repeat top right 38px #8dc63f;
 }
 
-.panel.success {
+.panel.success, .panel.success-draw {
   background: url("../images/base/background-2.png") no-repeat center left 53px #8dc63f;
 }
 
@@ -700,15 +700,15 @@ footer ul li a {
   padding: 0 50px;
 }
 
-.panel.fail .heading-1 {
+.panel.fail .heading-1, .panel.fail-2 .heading-1 {
   padding-top: 100px;
 }
 
-.panel.fail .paragraph-1 {
+.panel.fail .paragraph-1, .panel.fail-2 .paragraph-1 {
   padding: 33px 60px 147px 60px;
 }
 
-.panel.fail .give-chance {
+.panel.fail .give-chance, .panel.fail-2 .give-chance {
   float: left;
   font-size: 24px;
   line-height: 32px;
@@ -716,18 +716,60 @@ footer ul li a {
   width: 60%;
 }
 
-.panel.fail button {
+.panel.fail button, .panel.fail-2 button {
   font-size: 29px;
   float: left;
   margin-left: 28px;
 }
 
-.panel.success .heading-1 {
+.panel.success .heading-1, .panel.success-draw .heading-1 {
   padding: 40px 0;
 }
 
-.panel.success .paragraph-1 {
+.panel.success .paragraph-1, .panel.success-draw .paragraph-1 {
   padding: 0 40px;
+}
+
+.panel.success .give p, .panel.success .share p, .panel.success-draw .give p, .panel.success-draw .share p {
+  float: left;
+  width: 61%;
+  padding-left: 65px;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.panel.success .give button, .panel.success .share button, .panel.success-draw .give button, .panel.success-draw .share button {
+  font-size: 29px;
+}
+
+.panel.success .share, .panel.success-draw .share {
+  margin: 74px 0 67px 0;
+}
+
+.fail-draw .heading-1 {
+  padding: 55px 0 35px 0;
+}
+
+.fail-draw .paragraph-1 {
+  padding: 0 65px;
+}
+
+.fail-draw .paragraph-1:nth-of-type(2) {
+  margin: 48px 0 126px 0;
+}
+
+.fail-draw .give-chance {
+  float: left;
+  font-size: 24px;
+  line-height: 32px;
+  padding-left: 65px;
+  width: 60%;
+}
+
+.fail-draw button {
+  font-size: 29px;
+  float: left;
+  margin-left: 28px;
 }
 
 /*==========  Mobile First Method  ==========*/
