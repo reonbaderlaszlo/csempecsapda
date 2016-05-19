@@ -454,31 +454,7 @@ footer ul li a {
 }
 
 .panel.game {
-  /*  .navigations {
-        position: absolute;
-        width: 810px;
-        height: 450px;
-        top: 0;
-
-        a {
-            display: block;
-            position: absolute;
-            width: 69px;
-            height: 69px;
-            top: 50%;
-            transform: translateY(-50%);
-
-            &.left {
-                background: url("../images/index/left.png") no-repeat center;
-                left: 20px;
-            }
-
-            &.right {
-                background: url("../images/index/right.png") no-repeat center;
-                right: 20px;
-            }
-        }
-    }*/
+  overflow: hidden;
 }
 
 .panel.game .popup {
@@ -585,6 +561,20 @@ footer ul li a {
 .panel.game .game-box div {
   position: absolute;
   cursor: pointer;
+  z-index: 1;
+}
+
+.panel.game .game-box div .success {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 19px;
+  height: 15px;
+  background: url("../images/index/pipe.png") no-repeat center;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .panel.game .game-box .torulkozo {
@@ -606,7 +596,7 @@ footer ul li a {
   height: 60px;
   top: 132px;
   left: 695px;
-  z-index: 1;
+  z-index: 2;
 }
 
 .panel.game .game-box .kontos {
@@ -628,7 +618,7 @@ footer ul li a {
   height: 79px;
   left: 781px;
   top: 114px;
-  z-index: 1;
+  z-index: 2;
 }
 
 .panel.game .game-box .wc {
@@ -650,7 +640,127 @@ footer ul li a {
   right: 167px;
   height: 37px;
   bottom: 192px;
-  z-index: 1;
+  z-index: 2;
+}
+
+.panel.game .game-box .merleg {
+  width: 125px;
+  height: 69px;
+  left: 307px;
+  bottom: 35px;
+}
+
+.panel.game .game-box .ollo {
+  width: 52px;
+  height: 26px;
+  left: 518px;
+  top: 219px;
+}
+
+.panel.game .game-box .tukor {
+  width: 59px;
+  top: 137px;
+  height: 86px;
+  right: 622px;
+  z-index: 2;
+}
+
+.panel.game .game-box .mosogep {
+  width: 151px;
+  height: 188px;
+  right: 552px;
+  bottom: 50px;
+}
+
+.panel.game .game-box .hajszarito {
+  width: 82px;
+  top: 123px;
+  height: 86px;
+  left: 563px;
+}
+
+.panel.game .game-box .szappan {
+  width: 50px;
+  right: 120px;
+  height: 33px;
+  top: 234px;
+  z-index: 2;
+}
+
+.panel.game .game-box .parfum {
+  width: 44px;
+  height: 39px;
+  left: 481px;
+  top: 203px;
+}
+
+.panel.game .game-box .fesu {
+  width: 80px;
+  height: 25px;
+  right: 561px;
+  top: 198px;
+  z-index: 2;
+}
+
+.panel.game .game-box .kadkilepo {
+  width: 224px;
+  height: 49px;
+  right: 160px;
+  bottom: 4px;
+  z-index: 2;
+}
+
+.panel.game .game-box .zuhanyfuggony {
+  width: 172px;
+  top: 37px;
+  height: 287px;
+  right: 296px;
+  z-index: 2;
+}
+
+.panel.game .game-box .tusfurdo {
+  width: 32px;
+  height: 76px;
+  right: 61px;
+  bottom: 39px;
+  z-index: 2;
+}
+
+.panel.game .game-box .torulkozo-2 {
+  width: 77px;
+  height: 108px;
+  right: 197px;
+  bottom: 89px;
+  z-index: 2;
+}
+
+.panel.game .navigations {
+  position: absolute;
+  width: 810px;
+  height: 450px;
+  top: 0;
+}
+
+.panel.game .navigations a {
+  display: block;
+  position: absolute;
+  width: 69px;
+  height: 69px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 3;
+}
+
+.panel.game .navigations a.left {
+  background: url("../images/index/left.png") no-repeat center;
+  left: 20px;
+}
+
+.panel.game .navigations a.right {
+  background: url("../images/index/right.png") no-repeat center;
+  right: 20px;
 }
 
 .panel.game .lockers {

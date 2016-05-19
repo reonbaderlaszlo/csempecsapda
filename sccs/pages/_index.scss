@@ -116,7 +116,7 @@
 }
 
 .panel.game {
-    //   overflow: hidden;
+    overflow: hidden;
 
     .popup {
         display: none;
@@ -219,6 +219,18 @@
         div {
             position: absolute;
             cursor: pointer;
+            z-index: 1;
+
+            .success {
+                display: block;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                width: 19px;
+                height: 15px;
+                background: url("../images/index/pipe.png") no-repeat center;
+                transform: translate(-50%, -50%);
+            }
         }
 
         .torulkozo {
@@ -240,7 +252,7 @@
             height: 60px;
             top: 132px;
             left: 695px;
-            z-index: 1;
+            z-index: 2;
         }
 
         .kontos {
@@ -262,7 +274,7 @@
             height: 79px;
             left: 781px;
             top: 114px;
-            z-index: 1;
+            z-index: 2;
         }
 
         .wc {
@@ -284,11 +296,102 @@
             right: 167px;
             height: 37px;
             bottom: 192px;
-            z-index: 1;
+            z-index: 2;
+        }
+
+        .merleg {
+            width: 125px;
+            height: 69px;
+            left: 307px;
+            bottom: 35px;
+        }
+
+        .ollo {
+            width: 52px;
+            height: 26px;
+            left: 518px;
+            top: 219px;
+        }
+
+        .tukor {
+            width: 59px;
+            top: 137px;
+            height: 86px;
+            right: 622px;
+            z-index: 2;
+        }
+
+        .mosogep {
+            width: 151px;
+            height: 188px;
+            right: 552px;
+            bottom: 50px;
+        }
+
+        .hajszarito {
+            width: 82px;
+            top: 123px;
+            height: 86px;
+            left: 563px;
+        }
+
+        .szappan {
+            width: 50px;
+            right: 120px;
+            height: 33px;
+            top: 234px;
+            z-index: 2;
+        }
+
+        .parfum {
+            width: 44px;
+            height: 39px;
+            left: 481px;
+            top: 203px;
+        }
+
+        .fesu {
+            width: 80px;
+            height: 25px;
+            right: 561px;
+            top: 198px;
+            z-index: 2;
+        }
+
+        .kadkilepo {
+            width: 224px;
+            height: 49px;
+            right: 160px;
+            bottom: 4px;
+            z-index: 2;
+        }
+
+        .zuhanyfuggony {
+            width: 172px;
+            top: 37px;
+            height: 287px;
+            right: 296px;
+            z-index: 2;
+        }
+
+        .tusfurdo {
+            width: 32px;
+            height: 76px;
+            right: 61px;
+            bottom: 39px;
+            z-index: 2;
+        }
+
+        .torulkozo-2 {
+            width: 77px;
+            height: 108px;
+            right: 197px;
+            bottom: 89px;
+            z-index: 2;
         }
     }
 
-  /*  .navigations {
+    .navigations {
         position: absolute;
         width: 810px;
         height: 450px;
@@ -301,6 +404,7 @@
             height: 69px;
             top: 50%;
             transform: translateY(-50%);
+            z-index: 3;
 
             &.left {
                 background: url("../images/index/left.png") no-repeat center;
@@ -312,7 +416,7 @@
                 right: 20px;
             }
         }
-    }*/
+    }
 
     .lockers {
         padding-top: 24px;
